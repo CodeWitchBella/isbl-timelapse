@@ -1,6 +1,6 @@
 {
   "name": "@isbl/timelapse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Octoprint timelapse",
   "bin": "./render.js",
