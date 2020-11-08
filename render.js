@@ -1,3 +1,5 @@
+#!/bin/env node
+
 const fs = require('fs/promises')
 const childProcess = require('child_process')
 const path = require('path')
