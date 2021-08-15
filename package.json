@@ -1,6 +1,6 @@
 {
   "name": "@isbl/timelapse",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "Octoprint timelapse",
   "bin": "./render.js",
@@ -8,7 +8,17 @@
     "render.js",
     "README.md"
   ],
-  "repository": "https://github.com/CodeWitchBella/isbl-timelapse.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeWitchBella/isbl-timelapse.git"
+  },
   "author": "Isabella Skořepová",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@isbl/publisher": "^0.7.1"
+  },
+  "scripts": {
+    "prepublishOnly": "isbl-publisher prepublishOnly",
+    "publish:npm": "isbl-publisher publish --no-draft"
+  }
 }
